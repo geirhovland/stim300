@@ -15,3 +15,7 @@ AUX Data          : 255 239 2
 Counter [0-255]   : 225  
 Latency (us)      : 506  
 CRC32             : 3326689990  
+
+In this example the RedCOM USB-COMi - USB to RS422/RS485 was used. The RS422 cable from SensoNor was used, but the two signals RX+ and RX- had to be swapped as shown in the image. Since only data is received from the sensor in Normal Mode, only the two RX signals are needed. The size of the datagram (Rate,Acc,Incl,Temp,AUX) and the baud rate on the sensor was set to 115,200 bits/s using the USB cable from SensoNor and the Windows application "STIM300_Evaluation Kit".
+
+![RedCom USB-RS422 adater](https://raw.githubusercontent.com/geirhovland/stim300/main/STIM300_RS422.jpg)
